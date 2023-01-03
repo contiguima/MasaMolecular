@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.usuario-resultado{
+    padding: 20px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
