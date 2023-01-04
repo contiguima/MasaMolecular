@@ -63,6 +63,7 @@ var elementos = {
     // Separar el compuesto en elementos y cantidades
     var elementosCompuesto = compuesto.match(/[A-Z][a-z]*\d*/g);
     // Recorrer los elementos y sumar sus masas moleculares
+    if(elementosCompuesto != null) {
     for (var i = 0; i < elementosCompuesto.length; i++) {
       // Obtener el elemento y la cantidad
       var elemento = elementosCompuesto[i].match(/[A-Z][a-z]*/)[0];
@@ -74,12 +75,16 @@ var elementos = {
       }
       // Sumar la masa molecular del elemento al total
       masaMolecular += cantidad * elementos[elemento];
-      console.log(masaMolecular);
+      
     }
     // Mostrar el resultado en la página web
-    
+
     document.getElementById("resultado").innerHTML = "Masa molecular: " + masaMolecular + " g/mol";
-  
+  }
+  else {
+    document.getElementById("resultado").innerHTML = "Ups... este compuesto no está en nuestra base de datos o no existe.";
+
+  }
 }
 
   //Para mostrar la tabla

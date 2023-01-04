@@ -2,23 +2,25 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Calculadora de masa molecular</title>
+        <title>Calculadora de masa molar</title>
         <link rel="stylesheet" type="text/css" href="style.css">
        
     </head>
     <body>
+      <div class="calculadora-seccion">
       <section class="calculadora">
-      <h1>Calculadora de masa molecular</h1>
-      <p>Ingresa el compuesto químico para calcular su masa molecular:</p>
+      <h1>Calculadora de masa molar</h1>
+      <p>Ingresa el compuesto químico para calcular su masa molar:</p>
       <form>
         <label for="compuesto">Compuesto químico:</label><br>
         <input type="text" id="compuesto" name="compuesto"><br><br>
         <input type="button" value="Calcular" onclick="calcularMasaMolecular()">
       </form> 
       <p id="resultado"></p>
+    </div>
     </section>
     <section class="tabla-masas">
-      <h1>Tabla de masas moleculares</h1>
+      <h1>Tabla de masas molares</h1>
       <table id="tabla">
         <tr>
           <th>Elemento</th>

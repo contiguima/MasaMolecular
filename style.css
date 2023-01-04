@@ -1,24 +1,26 @@
-h1 {
-    color: red;
-    text-align: center;
-    align-items: center;
-    align-self: center;
+
+h1{
+  margin: 0 auto;
+  text-align: center;
 }
 
-.usuario-resultado{
-    padding: 20px;
+.calculadora-seccion{
+  background-image: url(fondoquimica.jpg);
+  padding: 20px;
+
 }
 
-table, td, th{
-    border: 1px solid black;
-    text-align: center;
-    margin: 0 auto;
+.tabla-masas{
+  padding: 20px;
+
 }
 
+/*Responsiveness*/
 /* Establecer tamaño máximo de la sección calculadora */
 section.calculadora {
     max-width: 400px;
     margin: 0 auto;
+  
   }
   
   /* Establecer tamaño máximo de la tabla */
@@ -46,6 +48,7 @@ section.calculadora {
     }
     section.tabla-masas h1 {
       font-size: 1.5em;
+    
     }
     table#tabla th,
     table#tabla td {
