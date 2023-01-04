@@ -15,3 +15,41 @@ table, td, th{
     margin: 0 auto;
 }
 
+/* Establecer tamaño máximo de la sección calculadora */
+section.calculadora {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Establecer tamaño máximo de la tabla */
+  table#tabla {
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  /* Ajustar tamaño de letra y márgenes en dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    section.calculadora h1 {
+      font-size: 1.5em;
+    }
+    section.calculadora p {
+      font-size: 0.9em;
+      margin: 10px 0;
+    }
+    section.calculadora form {
+      margin: 20px 0;
+    }
+    section.calculadora input[type="text"],
+    section.calculadora input[type="button"] {
+      width: 100%;
+    }
+    section.tabla-masas h1 {
+      font-size: 1.5em;
+    }
+    table#tabla th,
+    table#tabla td {
+      font-size: 0.8em;
+    }
+  }
+  
