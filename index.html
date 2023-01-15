@@ -7,18 +7,25 @@
        
     </head>
     <body>
-      <div class="calculadora-seccion">
-      <section class="calculadora">
-      <h1>Calculadora de masa molar</h1>
-      <p>Ingresa el compuesto químico para calcular su masa molar:</p>
-      <form>
-        <label for="compuesto">Compuesto químico:</label><br>
-        <input type="text" id="compuesto" name="compuesto"><br><br>
-        <input type="button" value="Calcular" onclick="calcularMasaMolecular()">
-      </form> 
-      <p id="resultado"></p>
-    </div>
-    </section>
+      <section class="calculadora-seccion">
+        <div class="col-calculadora">
+          <h1>CALCULADORA DE MASA MOLAR</h1>
+          <p>Esta calculadora contiene los datos de las masas molares de la tabla periódica hasta el elemento "Pa" (protactinio), cuyo número atómico es 91. Al ingresar compuestos, respeta las mayúsculas y minúsculas correspondientes.</p>
+          <p>Ingresa el compuesto químico para calcular su masa molar:</p>
+          <form>
+            <label for="compuesto">Compuesto químico:</label><br>
+            <input type="text" id="compuesto" name="compuesto"><br><br>
+            <input type="button" value="Calcular" onclick="calcularMasaMolecular()">
+          </form> 
+          <p id="resultado"></p>
+        </div>
+        <div class="col-info">
+          <h2>¿Qué es la masa molar de un compuesto?</h2>
+            <p>La masa molar de un compuesto es la masa de una molécula de ese compuesto expresada en unidades de masa molar (g/mol). Es el peso promedio de una molécula de un compuesto químico expresado en unidades de masa atómica unificada (u). Es una medida estándar para comparar la masa de diferentes moléculas.</p>
+            <br>
+        </div>
+      </section>
+
     <section class="tabla-masas">
       <h1>Tabla de masas molares</h1>
       <table id="tabla">

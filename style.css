@@ -1,58 +1,31 @@
-
-h1{
-  margin: 0 auto;
-  text-align: center;
-}
-
 .calculadora-seccion{
-  background-image: url(imagenes/fondoquimica.jpg);
-  padding: 20px;
+display: grid;
+grid-column-gap: 2em;
 
 }
 
-.tabla-masas{
-  padding: 20px;
+/* Para pantallas de tamaño pequeño */
+@media only screen and (max-width: 600px) {
+  .calculadora-seccion {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
 
+   
+  }
 }
 
-/*Responsiveness*/
-/* Establecer tamaño máximo de la sección calculadora */
-section.calculadora {
-    max-width: 400px;
-    margin: 0 auto;
-  
+/* Para pantallas de tamaño mediano */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .calculadora-seccion {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
-  
-  /* Establecer tamaño máximo de la tabla */
-  table#tabla {
-    max-width: 600px;
-    margin: 0 auto;
-    border-collapse: collapse;
+}
+
+/* Para pantallas de tamaño grande */
+@media only screen and (min-width: 901px) {
+  .calculadora-seccion {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
   }
-  
-  /* Ajustar tamaño de letra y márgenes en dispositivos móviles */
-  @media only screen and (max-width: 600px) {
-    section.calculadora h1 {
-      font-size: 1.5em;
-    }
-    section.calculadora p {
-      font-size: 0.9em;
-      margin: 10px 0;
-    }
-    section.calculadora form {
-      margin: 20px 0;
-    }
-    section.calculadora input[type="text"],
-    section.calculadora input[type="button"] {
-      width: 100%;
-    }
-    section.tabla-masas h1 {
-      font-size: 1.5em;
-    
-    }
-    table#tabla th,
-    table#tabla td {
-      font-size: 0.8em;
-    }
-  }
-  
+}
