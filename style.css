@@ -1,22 +1,101 @@
-.calculadora-seccion{
+.calculadora-seccion, .tabla-masas{
 display: grid;
 grid-column-gap: 2em;
 
 }
 
+body{ padding: 2em;}
+
+h1{
+  font-size: 40px; 
+  color: #247300;
+  font-family: 'DM Sans', sans-serif;
+  }
+
+h2{
+  font-size: 32px; 
+  color: #247300;
+  font-family: 'DM Sans', sans-serif;
+  }
+
+p, label, tr,th, input{
+  font-size: 16px;
+  line-height: 1.2em;
+  font-family: 'Inter', sans-serif;
+
+  }
+  .btn {
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:42px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:12px 24px;
+    text-decoration: none;
+    margin: 10px;
+  }
+  .btn:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color:#5cbf2a;
+  }
+  .btn:active {
+    position:relative;
+    top:1px;
+  }
+
+  #compuesto { 
+    border-color:#cccccc; 
+    border-style:solid; 
+    padding:10px; 
+    font-size:16px; 
+    border-radius:18px;  }
+  #compuesto:focus { outline:none; } 
+
+#tabla{
+  margin-left: 20px;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #338017;
+  border-style: solid;
+  color: #000000;
+}
+
+
+#tabla td,
+#tabla th {
+  border-width: 2px;
+  border-color: #338017;
+  border-style: solid;
+  padding: 1ch;
+  text-align: center;
+}
+
+.btn-contact-details {
+  color:#18ab29;
+  text-shadow: 0.5px 0.5px 0.5px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  margin-top: 15px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+        
 /* Para pantallas de tamaño pequeño */
 @media only screen and (max-width: 600px) {
-  .calculadora-seccion {
+  .calculadora-seccion, .tabla-masas {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 
    
   }
+  *{font-size: 70%;}
 }
 
 /* Para pantallas de tamaño mediano */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
-  .calculadora-seccion {
+  .calculadora-seccion, .tabla-masas{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
@@ -24,7 +103,7 @@ grid-column-gap: 2em;
 
 /* Para pantallas de tamaño grande */
 @media only screen and (min-width: 901px) {
-  .calculadora-seccion {
+  .calculadora-seccion, .tabla-masas {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
   }

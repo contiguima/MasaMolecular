@@ -4,7 +4,16 @@
         <meta charset="utf-8">
         <title>Calculadora de masa molar</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-       
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter&display=swap');          
+        </style>
+        <link
+        rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+          crossorigin="anonymous"
+        />
+                 
     </head>
     <body>
       <section class="calculadora-seccion">
@@ -14,8 +23,8 @@
           <p>Ingresa el compuesto químico para calcular su masa molar:</p>
           <form>
             <label for="compuesto">Compuesto químico:</label><br>
-            <input type="text" id="compuesto" name="compuesto"><br><br>
-            <input type="button" value="Calcular" onclick="calcularMasaMolecular()">
+            <input type="text" id="compuesto" name="compuesto">
+            <input type="button" value="Calcular" class = "btn" onclick="calcularMasaMolecular()">
           </form> 
           <p id="resultado"></p>
         </div>
@@ -27,6 +36,7 @@
       </section>
 
     <section class="tabla-masas">
+      <div class="col-tabla">
       <h1>Tabla de masas molares</h1>
       <table id="tabla">
         <tr>
@@ -34,6 +44,36 @@
           <th>Masa molecular (g/mol)</th>
         </tr>
       </table>
+    </div>
+    <div class="col-developer">
+      <h2>Desarrollado por:</h2>
+      <p>Constanza Guimaraez - Enero 2023</p>
+
+      <a href="contiguima@gmail.com"
+      target="_blank" 
+      class="btn-contact-details"
+      ><i class="fas fa-at"></i> Gmail</a
+    >
+
+    <a
+      href="https://www.linkedin.com/in/constanza-guimaraez-277939209/"
+      target="_blank"
+      class="btn-contact-details"
+      ><i class="fab fa-linkedin-in"></i> Linkedin</a
+    >
+    <a
+      href="https://twitter.com/contiguima28"
+      target="_blank"
+      class="btn-contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a
+      href="https://github.com/contiguima"
+      target="_blank"
+      class="btn-contact-details"
+      ><i class="fab fa-github"></i> Github</a
+    >
+    </div>
     </section>
       
       <script src="script.js"></script>

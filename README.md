@@ -1,5 +1,17 @@
-<h1> Calculadora de masa molecular </h1>
+<h1> Calculadora de masa molecular - Version 1</h1>
 
-<p> Este es un proyecto simple de HTML, CSS y JavaScript para repasar conceptos. Su funcionalidad es calcular la masa molecular de los compuestos quìmicos ingresados por el usuario </p>
+<p> Este es un proyecto simple de HTML, CSS y JavaScript para repasar conceptos. Su funcionalidad es calcular la masa molecular de los compuestos químicos ingresados por el usuario </p>
 <br>
 <p> Se utilizó un objeto JSON para almacenar los datos y se los muestra en la página con una tabla HTML</p>
+<br>
+<p> Actualmente, solo valida que el compuesto este en el objeto.</p>
+<h4> Modificaciones a futuro </h4>
+<ul>
+<li> Agregar validaciones </li>
+<li> Estilizar más</li>
+<li> Agregar nomenclatura </li>
+<li> Usar ReactJS y librerías de estilos </li>
+
+
+
+<ul>
