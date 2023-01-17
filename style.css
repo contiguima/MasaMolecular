@@ -1,10 +1,15 @@
 .calculadora-seccion, .tabla-masas{
-display: grid;
-grid-column-gap: 2em;
-
+  display:flex;
+  gap: 2em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1em;
 }
 
-body{ padding: 2em;}
+body{ 
+  padding: 2em;
+/*Agregar gradient*/
+}
 
 h1{
   font-size: 40px; 
@@ -82,29 +87,4 @@ p, label, tr,th, input{
 }
 
         
-/* Para pantallas de tamaño pequeño */
-@media only screen and (max-width: 600px) {
-  .calculadora-seccion, .tabla-masas {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
 
-   
-  }
-  *{font-size: 70%;}
-}
-
-/* Para pantallas de tamaño mediano */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .calculadora-seccion, .tabla-masas{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-}
-
-/* Para pantallas de tamaño grande */
-@media only screen and (min-width: 901px) {
-  .calculadora-seccion, .tabla-masas {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-  }
-}

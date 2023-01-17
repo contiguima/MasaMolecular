@@ -92,10 +92,11 @@ const elementos = {
   "Pa":231.04, 
   };
 
+  
+
   function calcularMasaMolecular() {
     // Obtener el valor del compuesto químico ingresado por el usuario
     var compuesto = document.getElementById("compuesto").value;
-    // Inicializar la masa molecular a 0
     var masaMolecular = 0;
     // Separar el compuesto en elementos y cantidades
     var elementosCompuesto = compuesto.match(/[A-Z][a-z]*\d*/g);
@@ -114,11 +115,8 @@ const elementos = {
       masaMolecular += cantidad * elementos[elemento];
       
     }
-    // Mostrar el resultado en la página web
-
     document.getElementById("resultado").innerHTML = "Masa molecular: " + masaMolecular + " g/mol";
-  }
-  
+  } 
   else {
     document.getElementById("resultado").innerHTML = "Ups... este compuesto no está en nuestra base de datos o no existe.";
   }
