@@ -7,6 +7,8 @@
 <p> Actualmente, solo valida que el compuesto este en el objeto.</p>
 <h4> Modificaciones a futuro </h4>
 <ul>
+<li> Evitar que la página se recargue al apretar enter</li>
+<li> Mejorar cálculos de compuestos como Ca(OH)4 y similares (caso paréntesis) </li>
 <li> Agregar validaciones </li>
 <li> Estilizar más</li>
 <li> Agregar nomenclatura </li>

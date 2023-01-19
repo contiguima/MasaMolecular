@@ -6,9 +6,17 @@
   margin: 1em;
 }
 
+.card{ 
+  
+  background-color: #fff;
+  padding:0 2em 2em 2em;
+
+}
+
 body{ 
   padding: 2em;
-/*Agregar gradient*/
+  background-color: #18ab29;
+
 }
 
 h1{
@@ -37,7 +45,7 @@ p, label, tr,th, input{
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    padding:12px 24px;
+    padding:1em 2em;
     text-decoration: none;
     margin: 10px;
   }
@@ -53,18 +61,23 @@ p, label, tr,th, input{
   #compuesto { 
     border-color:#cccccc; 
     border-style:solid; 
-    padding:10px; 
+    padding: 1em; 
     font-size:16px; 
-    border-radius:18px;  }
+    border-radius:18px;  
+    width: 60%;
+    resize: vertical;
+  
+  }
   #compuesto:focus { outline:none; } 
 
 #tabla{
-  margin-left: 20px;
+  margin: 0 auto;
   border-collapse: collapse;
   border-width: 2px;
   border-color: #338017;
   border-style: solid;
   color: #000000;
+  
 }
 
 
