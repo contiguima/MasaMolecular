@@ -9,7 +9,7 @@
 <ul>
 <li> Mejorar cálculos de compuestos como Ca(OH)4 y similares (caso paréntesis) </li>
 <li> Agregar validaciones: inputs en blanco, errores en el uso de mayúsculas y minúsculas, etc</li>
-<li>Versión con ReactJS y Bootstrap </li>
+<li> Versión con ReactJS y Bootstrap </li>
 
 
 
