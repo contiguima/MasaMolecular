@@ -9,10 +9,8 @@
 <ul>
 <li> Evitar que la página se recargue al apretar enter</li>
 <li> Mejorar cálculos de compuestos como Ca(OH)4 y similares (caso paréntesis) </li>
-<li> Agregar validaciones </li>
-<li> Estilizar más</li>
-<li> Agregar nomenclatura </li>
-<li> Usar ReactJS y librerías de estilos </li>
+<li> Agregar validaciones: inputs en blanco, errores en el uso de mayúsculas y minúsculas, etc</li>
+<li> Versión con ReactJS y Bootstrap </li>
 
 
 
